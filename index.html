@@ -152,6 +152,84 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-hexo配置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/01/11/hexo%E9%85%8D%E7%BD%AE/">hexo博客框架配置</a>
+    </h1>
+  
+
+        
+        <a href="/2023/01/11/hexo%E9%85%8D%E7%BD%AE/" class="archive-article-date">
+  	<time datetime="2023-01-11T04:21:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="第一步下载nodejs"><a href="#第一步下载nodejs" class="headerlink" title="第一步下载nodejs"></a>第一步下载nodejs</h2><p>直接到官网下载比较简单，一直next<br><img src="https://cdn.jsdelivr.net/gh/zhangqian6/zhangqian6.github.io/img/1.png" alt="avatar"></p>
+<h2 id="第二步查看是否安装好"><a href="#第二步查看是否安装好" class="headerlink" title="第二步查看是否安装好"></a>第二步查看是否安装好</h2><p><img src="https://cdn.jsdelivr.net/gh/zhangqian6/zhangqian6.github.io/img/2.png" alt="avatar"></p>
+<h2 id="第三步安装cnpm淘宝镜像源，用该源来安装hexo"><a href="#第三步安装cnpm淘宝镜像源，用该源来安装hexo" class="headerlink" title="第三步安装cnpm淘宝镜像源，用该源来安装hexo"></a>第三步安装cnpm淘宝镜像源，用该源来安装hexo</h2><p><img src="https://cdn.jsdelivr.net/gh/zhangqian6/zhangqian6.github.io/img/3.png" alt="avatar"><br><img src="https://cdn.jsdelivr.net/gh/zhangqian6/zhangqian6.github.io/img/3_1.png" alt="avatar"></p>
+<h2 id="第四步安装hexo并且查看hexo版本"><a href="#第四步安装hexo并且查看hexo版本" class="headerlink" title="第四步安装hexo并且查看hexo版本"></a>第四步安装hexo并且查看hexo版本</h2><p>命令为cnpm install -g hexo-cli<br><img src="https://cdn.jsdelivr.net/gh/zhangqian6/zhangqian6.github.io/img/4.png" alt="avatar"></p>
+<h2 id="第五步创建一个blog文件，然后在文件中用hexo生成一个blog"><a href="#第五步创建一个blog文件，然后在文件中用hexo生成一个blog" class="headerlink" title="第五步创建一个blog文件，然后在文件中用hexo生成一个blog"></a>第五步创建一个blog文件，然后在文件中用hexo生成一个blog</h2><p><img src="https://cdn.jsdelivr.net/gh/zhangqian6/zhangqian6.github.io/img/5.png" alt="avatar"></p>
+<h2 id="第六步本地启动hexo"><a href="#第六步本地启动hexo" class="headerlink" title="第六步本地启动hexo"></a>第六步本地启动hexo</h2><p>命令为hexo start<br><img src="https://cdn.jsdelivr.net/gh/zhangqian6/zhangqian6.github.io/img/6.png" alt="avatar"></p>
+<h2 id="第七步断开hexo新建一篇博客-并且编辑内容-建议用vscode"><a href="#第七步断开hexo新建一篇博客-并且编辑内容-建议用vscode" class="headerlink" title="第七步断开hexo新建一篇博客,并且编辑内容(建议用vscode)"></a>第七步断开hexo新建一篇博客,并且编辑内容(建议用vscode)</h2><p>命令为hexo new “我的第一篇博客”<br><img src="https://cdn.jsdelivr.net/gh/zhangqian6/zhangqian6.github.io/img/7.png" alt="avatar"></p>
+<h2 id="第八步生成新的博客"><a href="#第八步生成新的博客" class="headerlink" title="第八步生成新的博客"></a>第八步生成新的博客</h2><p>1.清除先前的生成记录 hexo clean</p>
+<p>2.重新生成博客 hexo generate或hexo g</p>
+<p>3.重新启动本地博客 hexo s</p>
+<p><img src="https://cdn.jsdelivr.net/gh/zhangqian6/zhangqian6.github.io/img/8.png" alt="avatar"></p>
+<h2 id="第九步把本地博客部署到github上，通过GitHub就能访问博客"><a href="#第九步把本地博客部署到github上，通过GitHub就能访问博客" class="headerlink" title="第九步把本地博客部署到github上，通过GitHub就能访问博客"></a>第九步把本地博客部署到github上，通过GitHub就能访问博客</h2><pre><code>注意：仓库名一定要符合特定要求：giuhub用户名.github.io
+</code></pre>
+<h2 id="第十步安装一个hexo插件，在blog目录下完成"><a href="#第十步安装一个hexo插件，在blog目录下完成" class="headerlink" title="第十步安装一个hexo插件，在blog目录下完成"></a>第十步安装一个hexo插件，在blog目录下完成</h2><p>npm install hexo-deployer-git –save<br><img src="https://cdn.jsdelivr.net/gh/zhangqian6/zhangqian6.github.io/img/10.png" alt="avatar"></p>
+<h2 id="第十一步配置-config-yml文件"><a href="#第十一步配置-config-yml文件" class="headerlink" title="第十一步配置_config.yml文件"></a>第十一步配置_config.yml文件</h2><p><img src="https://cdn.jsdelivr.net/gh/zhangqian6/zhangqian6.github.io/img/11.png" alt="avatar"></p>
+<h2 id="第十二步部署到远端"><a href="#第十二步部署到远端" class="headerlink" title="第十二步部署到远端"></a>第十二步部署到远端</h2><p>1.在bolg中，命令为:hexo d, 这里比较依赖网络<br>2.在浏览器中输入giuhub用户名.github.io，就能查看部署在github上的博客</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2023/01/11/hexo%E9%85%8D%E7%BD%AE/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -188,79 +266,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2023/01/11/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hexo配置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2023/01/11/hexo%E9%85%8D%E7%BD%AE/">hexo博客框架配置</a>
-    </h1>
-  
-
-        
-        <a href="/2023/01/11/hexo%E9%85%8D%E7%BD%AE/" class="archive-article-date">
-  	<time datetime="2023-01-11T04:21:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="第一步下载nodejs"><a href="#第一步下载nodejs" class="headerlink" title="第一步下载nodejs"></a>第一步下载nodejs</h2><p>直接到官网下载比较简单，一直next<br><img src="https://cdn.jsdelivr.net/gh/zhangqian6/zhangqian6.github.io/img/1.png" alt="avatar"></p>
-<h2 id="第二步查看是否安装好"><a href="#第二步查看是否安装好" class="headerlink" title="第二步查看是否安装好"></a>第二步查看是否安装好</h2><h2 id="第三步安装cnpm淘宝镜像源，用该源来安装hexo"><a href="#第三步安装cnpm淘宝镜像源，用该源来安装hexo" class="headerlink" title="第三步安装cnpm淘宝镜像源，用该源来安装hexo"></a>第三步安装cnpm淘宝镜像源，用该源来安装hexo</h2><h2 id="第四步安装hexo并且查看hexo版本"><a href="#第四步安装hexo并且查看hexo版本" class="headerlink" title="第四步安装hexo并且查看hexo版本"></a>第四步安装hexo并且查看hexo版本</h2><p>命令为cnpm install -g hexo-cli</p>
-<h2 id="第五步创建一个blog文件，然后在文件中用hexo生成一个blog"><a href="#第五步创建一个blog文件，然后在文件中用hexo生成一个blog" class="headerlink" title="第五步创建一个blog文件，然后在文件中用hexo生成一个blog"></a>第五步创建一个blog文件，然后在文件中用hexo生成一个blog</h2><h2 id="第六步本地启动hexo"><a href="#第六步本地启动hexo" class="headerlink" title="第六步本地启动hexo"></a>第六步本地启动hexo</h2><p>命令为hexo start</p>
-<h2 id="第七步断开hexo新建一篇博客-并且编辑内容-建议用vscode"><a href="#第七步断开hexo新建一篇博客-并且编辑内容-建议用vscode" class="headerlink" title="第七步断开hexo新建一篇博客,并且编辑内容(建议用vscode)"></a>第七步断开hexo新建一篇博客,并且编辑内容(建议用vscode)</h2><p>命令为hexo new “我的第一篇博客”</p>
-<h2 id="第八步生成新的博客"><a href="#第八步生成新的博客" class="headerlink" title="第八步生成新的博客"></a>第八步生成新的博客</h2><p>1.清除先前的生成记录 hexo clean</p>
-<p>2.重新生成博客 hexo generate或hexo g</p>
-<p>3.重新启动本地博客 hexo s</p>
-<h2 id="第九步把本地博客部署到github上，通过GitHub就能访问博客"><a href="#第九步把本地博客部署到github上，通过GitHub就能访问博客" class="headerlink" title="第九步把本地博客部署到github上，通过GitHub就能访问博客"></a>第九步把本地博客部署到github上，通过GitHub就能访问博客</h2><pre><code>注意：仓库名一定要符合特定要求：giuhub用户名.github.io
-</code></pre>
-<h2 id="第十步安装一个hexo插件，在blog目录下完成"><a href="#第十步安装一个hexo插件，在blog目录下完成" class="headerlink" title="第十步安装一个hexo插件，在blog目录下完成"></a>第十步安装一个hexo插件，在blog目录下完成</h2><p>npm install hexo-deployer-git –save</p>
-<h2 id="第十一步配置-config-yml文件"><a href="#第十一步配置-config-yml文件" class="headerlink" title="第十一步配置_config.yml文件"></a>第十一步配置_config.yml文件</h2><h2 id="第十二步部署到远端"><a href="#第十二步部署到远端" class="headerlink" title="第十二步部署到远端"></a>第十二步部署到远端</h2><p>在bolg中，命令为:hexo d<br>这里比较依赖网络</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2023/01/11/hexo%E9%85%8D%E7%BD%AE/">展开全文 >></a>
         </p>
       
 
